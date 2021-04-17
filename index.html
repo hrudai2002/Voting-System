@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Voting System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "Ld.css">
+
+</head>
+<body>
+  
+    <div class = "container">
+        <h2> Voting System</h2>
+        <img src = ""/>
+    <div class = "voting"> 
+         <button id = "likebtn">
+             <i class = "fa fa-thumbs-up"></i>
+
+         </button>
+        <input type = "number" id = "input1" value = "0" name = "">
+        
+
+   
+    
+        <button id = "dislikebtn">
+            <i class = "fa fa-thumbs-down"></i>
+
+        </button>
+       <input type = "number" id = "input2" value = "0" name = "">
+       
+   </div>
+   
+ </div>
+
+<script type = "text/javascript">
+let likebtn = document.querySelector('#likebtn');
+let dislikebtn = document.querySelector('#dislikebtn');
+let input1 = document.querySelector('#input1');
+let input2 = document.querySelector('#input2');
+
+likebtn.addEventListener('click',()=>{
+input1.value = parseInt(input1.value) + 1;
+input1.style.color = "#12ff00";
+})
+
+dislikebtn.addEventListener('click',()=>{
+input2.value = parseInt(input2.value) + 1;
+input2.style.color = "#ff0000";
+})
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
